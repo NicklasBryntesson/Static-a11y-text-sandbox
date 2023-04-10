@@ -1,0 +1,37 @@
+/* <div> */
+.site-wrapper {
+  /* Make content make the footer hug the bottom */
+  flex: 1;
+
+  /* Mobile 0 - 480 */
+  @media (min-width: 0) and (max-width: 29.98rem) {
+    /* Define mobile layout here */
+  }
+
+  /* Small desktop/Phablet  480 - 1200 */
+  @media (min-width: 30rem) and (max-width: 74.98rem) {
+    /* Decide what is supposed to happen here? */
+  }
+
+  /* Desktop 1200 - 1800 */
+  @media (min-width: 75rem) {
+  }
+}
+
+/* <main> */
+.site-main {
+  /* grid is set in grid.css in this folder */
+
+  /* <article> */
+  & .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+[data-measure="rem"] {
+  .content {
+    padding-block: var(--utillity-gap-s-rem);
+    padding-inline: var(--outer-margin-rem);
+  }
+}

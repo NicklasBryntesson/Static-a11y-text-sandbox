@@ -1,0 +1,22 @@
+.debugger * {
+  --debugger-solid: hsl(330, 100%, 71%);
+  --debugger-transparent: hsla(330, 100%, 71%, 0.2);
+  --debugger-text: rgb(0, 0, 0);
+  position: relative !important;
+  box-sizing: border-box !important;
+  background: var(--debugger-transparent) !important;
+  color: var(--debugger-text) !important;
+  outline: 2px solid var(--debugger-solid);
+}
+
+html[data-debug="true"] {
+  & body * {
+    --debugger-semi-transparent: hsla(330, 100%, 71%, 0.7);
+    --debugger-transparent: hsla(330, 100%, 71%, 0.2);
+    --debugger-text: rgb(0, 0, 0);
+    background: var(--debugger-transparent) !important;
+    color: var(--debugger-text) !important;
+    outline: 2px solid var(--debugger-semi-transparent);
+    outline-offset: -4px;
+  }
+}

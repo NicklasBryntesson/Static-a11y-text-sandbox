@@ -1,0 +1,25 @@
+@import "setup/variables.css";
+@import "setup/utilities/shadows.css";
+@import "setup/reset.css";
+@import "setup/fonts.css";
+@import "setup/a11y.css";
+@import "setup/typography.css";
+
+@import "global/inputs.css";
+
+@import "global/header.css";
+@import "global/footer.css";
+
+@import "partials/content/main.css";
+@import "partials/cards/card.css";
+
+.text {
+  max-width: 56rem;
+  margin-inline: auto;
+  margin-block: 4rem;
+
+  & > * {
+    max-width: 54ch;
+    margin-inline-end: auto;
+  }
+}

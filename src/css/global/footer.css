@@ -1,0 +1,21 @@
+.site-footer {
+  margin-block-start: 4rem;
+  padding-block: 4rem;
+  background-color: var(--brand-pasoa);
+  color: var(--brand-color-black);
+  align-self: flex-end;
+  width: 100%;
+
+  & .inline-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: var(--imutable-outer-margin);
+
+    & a {
+      color: var(--brand-color-black);
+      text-decoration: none;
+    }
+  }
+}
