@@ -4,7 +4,8 @@
   --brand-hot-pink: #ff12ba;
   --brand-sunset: #f9537b;
   --brand-pasoa: #f28b71;
-  --brand-sand: #f0cfa1;
+  --brand-sand: hsl(35, 72%, 79%);
+  --brand-sand-50: hsla(35, 72%, 79%, 0.5);
   --brand-limone: hsla(60, 62%, 88%, 1);
 
   --brand-color-white: #fff;

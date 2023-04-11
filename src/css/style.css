@@ -13,7 +13,7 @@
 @import "partials/content/main.css";
 @import "partials/cards/card.css";
 
-.text {
+.wysiwyg-text {
   max-width: 56rem;
   margin-inline: auto;
   margin-block: 4rem;
@@ -21,5 +21,69 @@
   & > * {
     max-width: 54ch;
     margin-inline-end: auto;
+  }
+
+  & ul,
+  & ol,
+  & dl {
+    margin-block: 1.25rem;
+  }
+
+  & p {
+    margin-block-end: 1.25rem;
+  }
+}
+
+.controls {
+  max-width: 56rem;
+  margin-inline: auto;
+  margin-block: 4rem;
+  padding-inline: 1rem;
+}
+
+.measure {
+  background-color: var(--brand-sand-50);
+  font-size: unset;
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  grid-template-areas:
+    "remBox remText"
+    "text text";
+  /*   border: 0.125rem solid var(--brand-hot-pink); */
+  border-radius: 0.5em;
+  padding: 1rem;
+  margin-block: 4rem;
+  gap: 1rem;
+
+  & #remBox {
+    grid-area: remBox;
+    display: inline;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--brand-hot-pink);
+  }
+
+  & #remText {
+    grid-area: remText;
+    display: inline;
+    font-size: 1rem;
+  }
+
+  & #remInfo {
+    grid-area: text;
+  }
+}
+
+.values {
+  background-color: var(--brand-sand-50);
+  border-radius: 0.5em;
+  padding: 1rem;
+
+  & fieldset {
+    border: 0.125em solid var(--brand-color-black);
+    border-radius: 0.25em;
+    margin-block-end: 1rem;
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
   }
 }
