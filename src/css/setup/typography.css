@@ -12,4 +12,5 @@ p,
 input,
 textarea {
   font-family: var(--font-body);
+  font-weight: 400;
 }

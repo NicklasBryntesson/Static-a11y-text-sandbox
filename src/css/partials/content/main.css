@@ -20,8 +20,6 @@
 
 /* <main> */
 .site-main {
-  /* grid is set in grid.css in this folder */
-
   /* <article> */
   & .content {
     display: flex;
@@ -29,9 +27,48 @@
   }
 }
 
-[data-measure="rem"] {
-  .content {
-    padding-block: var(--utillity-gap-s-rem);
-    padding-inline: var(--outer-margin-rem);
+/*
+*
+* Mobile view
+*
+*/
+
+@media (min-width: 0) and (max-width: 29.98rem) {
+  [data-measure="vertical-px-horizontal-px"] {
+    & .site-main .content {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-px-rem);
+    }
+  }
+
+  [data-measure="vertical-px-horizontal-rem"] {
+    & .site-main .content {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+
+  [data-measure="vertical-rem-horizontal-rem"] {
+    & .site-main .content {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+}
+
+/*
+*
+* Desktop view
+*
+*/
+
+@media (min-width: 30rem) {
+  [data-measure="vertical-px-horizontal-px"],
+  [data-measure="vertical-px-horizontal-rem"],
+  [data-measure="vertical-rem-horizontal-rem"] {
+    & .site-main .content {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
   }
 }

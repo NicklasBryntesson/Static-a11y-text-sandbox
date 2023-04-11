@@ -23,16 +23,32 @@
   --font-body: "Cheltenham Std", Georgia, "Times New Roman", Times, serif;
 
   /* Utilities */
-
   --outer-margin-px: 16px;
-  --utillity-gap-s-px: 28px;
-  --utillity-gap-m-px: 42px;
-  --utillity-gap-l-px: 56px;
+  --utillity-gap-xs-px: 16px;
+  --utillity-gap-sm-px: 28px;
+  --utillity-gap-md-px: 42px;
+  --utillity-gap-lg-px: 56px;
+  --utillity-gap-xl-px: 70px;
 
   --outer-margin-rem: 1rem;
-  --utillity-gap-s-rem: 1.75rem;
-  --utillity-gap-m-rem: 2.625rem;
-  --utillity-gap-l-rem: 3.5rem;
+  --utillity-gap-xs-rem: 1rem;
+  --utillity-gap-sm-rem: 1.75rem;
+  --utillity-gap-md-rem: 2.625rem;
+  --utillity-gap-lg-rem: 3.5rem;
+  --utillity-gap-xl-rem: 4.375rem;
+
+  /* Breakpoints */
+  --breakpoint-xs-px: 320px;
+  --breakpoint-sm-px: 640px;
+  --breakpoint-md-px: 768px;
+  --breakpoint-lg-px: 1024px;
+  --breakpoint-xl-px: 1280px;
+
+  --breakpoint-xs-rem: 20rem;
+  --breakpoint-sm-rem: 40rem;
+  --breakpoint-md-rem: 48rem;
+  --breakpoint-lg-rem: 64rem;
+  --breakpoint-xl-rem: 80rem;
 
   /* Element  */
 

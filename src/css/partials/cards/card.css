@@ -1,9 +1,14 @@
+/*
+*
+* Generic styles
+*
+*/
+
 .card {
   max-width: 36rem;
   margin-inline: auto;
   background-color: var(--full-white);
   box-shadow: var(--card-shadow-elevation-medium);
-  border-radius: 0.75em;
   overflow: hidden;
 
   & .image {
@@ -35,68 +40,82 @@
       font-family: var(--font-heading);
       font-weight: 700;
       color: var(--brand-deep-plum);
-      margin-block-end: 0.25em;
     }
 
     & p {
       font-size: clamp(1rem, 0.953rem + 0.2vw, 1.125rem);
-      margin-block-end: 1rem;
     }
   }
 }
 
-@keyframes pan-image {
-  0% {
-    background-position: 36% 42%;
-    background-size: 200%;
+/*
+*
+* Mobile view
+*
+*/
+
+@media (min-width: 0) and (max-width: 29.98rem) {
+  [data-measure="vertical-px-horizontal-px"] {
+    & .card {
+      border-radius: 12px;
+      margin-block-end: var(--utillity-gap-md-px);
+
+      & .content {
+        padding-inline: 24px;
+        padding-block: 24px;
+      }
+    }
   }
 
-  20% {
-    background-position: 30% 35%;
-    background-size: 200%;
+  [data-measure="vertical-px-horizontal-rem"] {
+    & .card {
+      border-radius: 0.75em;
+      margin-block-end: var(--utillity-gap-md-rem);
+
+      & .content {
+        padding-inline: 24px;
+        padding-block: 1.5rem;
+      }
+    }
   }
 
-  20.0001% {
-    /* -- View 2 -- */
-    background-position: 60% 85%;
-    background-size: 500%;
-  }
+  [data-measure="vertical-rem-horizontal-rem"] {
+    & .card {
+      border-radius: 0.75em;
+      margin-block-end: var(--utillity-gap-md-rem);
 
-  40% {
-    background-position: 49% 81%;
-    background-size: 500%;
+      & .content {
+        padding: 1.5rem;
+      }
+    }
   }
+}
 
-  40.0001% {
-    /* -- View 3 -- */
-    background-position: 80% 42%;
-    background-size: 300%;
-  }
+/*
+*
+* Desktop view
+*
+*/
 
-  60% {
-    background-position: 84% 33%;
-    background-size: 300%;
-  }
+@media (min-width: 30rem) {
+  [data-measure="vertical-px-horizontal-px"],
+  [data-measure="vertical-px-horizontal-rem"],
+  [data-measure="vertical-rem-horizontal-rem"] {
+    & .card {
+      border-radius: 0.75em;
+      margin-block-end: var(--utillity-gap-md-rem);
 
-  60.0001% {
-    /* -- View 4 -- */
-    background-position: 0% 0%;
-    background-size: 300%;
-  }
+      & .content {
+        padding: 1.5rem;
 
-  80% {
-    background-position: 15% 4%;
-    background-size: 300%;
-  }
+        & small {
+          margin-block-end: 0.25em;
+        }
 
-  80.0001% {
-    /* -- View 5 -- */
-    background-position: 80% 10%;
-    background-size: 300%;
-  }
-
-  100% {
-    background-position: 72% 14%;
-    background-size: 300%;
+        & p {
+          margin-block-end: 1rem;
+        }
+      }
+    }
   }
 }

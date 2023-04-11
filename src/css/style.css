@@ -14,9 +14,9 @@
 @import "partials/cards/card.css";
 
 .wysiwyg-text {
-  max-width: 56rem;
+  max-width: var(--breakpoint-md-rem);
   margin-inline: auto;
-  margin-block: 4rem;
+  margin-block-end: 4rem;
 
   & > * {
     max-width: 54ch;
@@ -35,7 +35,7 @@
 }
 
 .controls {
-  max-width: 56rem;
+  max-width: var(--breakpoint-md-rem);
   margin-inline: auto;
   margin-block: 4rem;
   padding-inline: 1rem;
@@ -85,5 +85,82 @@
     margin-block-end: 1rem;
     padding-block: 0.75rem;
     padding-inline: 1rem;
+  }
+}
+
+/* We are only testing this in mobile view */
+/* @media (min-width: 0) and (max-width: 29.98rem) {
+  [data-measure="vertical-px-horizontal-px"] {
+    & #app {
+      background-color: lawngreen;
+    }
+  }
+
+  [data-measure="vertical-px-horizontal-rem"] {
+    & #app {
+      background-color: fuchsia;
+    }
+  }
+
+  [data-measure="vertical-rem-horizontal-rem"] {
+    & #app {
+      background-color: tomato;
+    }
+  }
+}
+ */
+
+#experimentDivider {
+  position: relative;
+  font-size: 16px;
+  margin-block-end: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--breakpoint-md-rem);
+  margin-inline: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 0.125rem dashed var(--brand-hot-pink);
+  }
+
+  &::before {
+    margin-inline-end: 0.5rem;
+  }
+
+  &::after {
+    margin-inline-start: 0.5rem;
+  }
+}
+
+#displayViewPort {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  margin-block-end: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+
+  &::before {
+    position: absolute;
+    text-align: center;
+  }
+
+  @media (min-width: 0) and (max-width: 29.98rem) {
+    &::before {
+      content: "In mobile media query";
+    }
+  }
+
+  @media (min-width: 30rem) {
+    &::before {
+      content: "Above mobile media query";
+    }
   }
 }
