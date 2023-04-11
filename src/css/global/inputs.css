@@ -29,10 +29,7 @@
   color: var(--gradientButton-default-textColor);
   background-image: var(--gradientButton-default-backgroundColor);
   background-size: 600%;
-  /*   animation: animatedGradient 20s linear infinite;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out; */
+  animation: animatedGradient 20s linear infinite;
   /* transition: all 1s ease-in-out; */
   font-family: var(--font-heading);
   font-size: 1.125rem;
