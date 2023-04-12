@@ -27,9 +27,17 @@ const responsiveValuesSwitch = document.getElementById('responsiveValuesSwitch')
 
 if (responsiveValuesSwitch) {
 
+  const measure = localStorage.getItem('measure');
+
+  if (measure) {
+    document.documentElement.setAttribute('data-measure', measure);
+    responsiveValuesSwitch.querySelector(`[value="${measure}"]`).setAttribute('checked', 'checked');
+  }
+
   responsiveValuesSwitch.addEventListener('change', function(event) {
     const newMeasure = event.target.value;
     document.documentElement.setAttribute('data-measure', newMeasure);
+    localStorage.setItem('measure', newMeasure);
   });
 
 }
