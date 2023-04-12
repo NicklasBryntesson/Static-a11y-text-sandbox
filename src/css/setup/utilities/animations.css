@@ -65,3 +65,49 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes pan-image-two {
+  0% {
+    transform: translate(0, 0) scale(2.5);
+  }
+
+  20% {
+    transform: translate(-10%, -20%) scale(2.8);
+  }
+
+  20.0001% {
+    /* -- View 2 -- */
+    transform: translate(20%, 35%) scale(3);
+  }
+
+  40% {
+    transform: translate(-1%, -19%) scale(2);
+  }
+
+  40.0001% {
+    /* -- View 3 -- */
+    transform: translate(20%, 0) scale(2.12);
+  }
+
+  60% {
+    transform: translate(44%, -9%) scale(2);
+  }
+
+  60.0001% {
+    /* -- View 4 -- */
+    transform: translate(-50%, -45%) scale(2.12);
+  }
+
+  80% {
+    transform: translate(-58%, -31%) scale(2.16);
+  }
+
+  80.0001% {
+    /* -- View 5 -- */
+    transform: translate(10%, -22%) scale(2.15);
+  }
+
+  100% {
+    transform: translate(-8%, -33%) scale(3);
+  }
+}
