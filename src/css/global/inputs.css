@@ -23,13 +23,13 @@
   justify-content: center;
   align-items: center;
   width: fit-content;
-  min-width: 12rem;
-  padding: 0.65em 1.125em;
-  border-radius: 0.35em;
+  padding-inline: 2em;
+  padding-block: 0.65em;
+  border-radius: 0.4em;
   color: var(--gradientButton-default-textColor);
   background-image: var(--gradientButton-default-backgroundColor);
   background-size: 600%;
-  animation: animatedGradient 20s linear infinite;
+  animation: animatedGradient 12s linear infinite;
   /* transition: all 1s ease-in-out; */
   font-family: var(--font-heading);
   font-size: 1.125rem;

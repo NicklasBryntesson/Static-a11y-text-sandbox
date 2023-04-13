@@ -1,7 +1,7 @@
 .site-footer {
   margin-block-start: 4rem;
-  padding-block: 4rem;
   background-color: var(--brand-pasoa);
+  background-image: url("./images/header-noise.svg");
   color: var(--brand-color-black);
   align-self: flex-end;
   width: 100%;
@@ -16,6 +16,52 @@
     & a {
       color: var(--brand-color-black);
       text-decoration: none;
+    }
+  }
+}
+
+/*
+*
+* Mobile view
+*
+*/
+
+@media (min-width: 0) and (max-width: 29.98rem) {
+  [data-measure="vertical-px-horizontal-px"] {
+    .site-footer {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-sm-px);
+    }
+  }
+
+  [data-measure="vertical-px-horizontal-rem"] {
+    .site-footer {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+
+  [data-measure="vertical-rem-horizontal-rem"] {
+    .site-footer {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+}
+
+/*
+*
+* Desktop view
+*
+*/
+
+@media (min-width: 30rem) {
+  [data-measure="vertical-px-horizontal-px"],
+  [data-measure="vertical-px-horizontal-rem"],
+  [data-measure="vertical-rem-horizontal-rem"] {
+    .site-footer {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
     }
   }
 }

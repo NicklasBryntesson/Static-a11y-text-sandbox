@@ -66,7 +66,7 @@
   }
 }
 
-@keyframes pan-image-two {
+@keyframes pan-image-three {
   0% {
     transform: translate(0, 0) scale(2.5);
   }
@@ -109,5 +109,47 @@
 
   100% {
     transform: translate(-8%, -33%) scale(3);
+  }
+}
+
+@keyframes pan-image-two {
+  0% {
+    transform: translate(0, 0) scale(2.5);
+  }
+
+  20% {
+    transform: translate(-10%, -20%) scale(3);
+  }
+
+  20.0001% {
+    transform: translate(20%, 35%) scale(4);
+  }
+
+  40% {
+    transform: translate(-1%, -19%) scale(3);
+  }
+
+  40.0001% {
+    transform: translate(20%, 0) scale(3.5);
+  }
+
+  60% {
+    transform: translate(44%, -9%) scale(2.5);
+  }
+
+  60.0001% {
+    transform: translate(-50%, -45%) scale(3.5);
+  }
+
+  80% {
+    transform: translate(-58%, -31%) scale(3.2);
+  }
+
+  80.0001% {
+    transform: translate(10%, -22%) scale(3);
+  }
+
+  100% {
+    transform: translate(-8%, -33%) scale(4);
   }
 }

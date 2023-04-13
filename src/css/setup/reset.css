@@ -30,7 +30,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   font-family: var(--font-body);
 }
 /*
@@ -84,5 +84,4 @@ h6 {
   padding: 0;
   background-color: var(--body-background);
   background-image: url("./images/body-noise.svg");
-  overflow-x: hidden;
 }

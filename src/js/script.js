@@ -1,7 +1,6 @@
 const documentBody = document.querySelector('body');
-console.log(documentBody);
 
-// Track the browser fontsize
+// Track the browser fontsize:
 const remBox = document.getElementById('remBox');
 const remText = document.getElementById('remValue');
 
@@ -21,8 +20,7 @@ const ro = new ResizeObserver(entries => {
 ro.observe(remBox.parentElement);
 
 
-
-// Switch between responsive values
+// Switch between values: px and rem
 const responsiveValuesSwitch = document.getElementById('responsiveValuesSwitch');
 
 if (responsiveValuesSwitch) {
@@ -39,5 +37,4 @@ if (responsiveValuesSwitch) {
     document.documentElement.setAttribute('data-measure', newMeasure);
     localStorage.setItem('measure', newMeasure);
   });
-
 }

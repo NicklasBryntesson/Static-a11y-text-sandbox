@@ -7,33 +7,14 @@
 @import "setup/typography.css";
 
 @import "global/inputs.css";
-
+@import "global/typography.css";
 @import "global/header.css";
 @import "global/footer.css";
 
+@import "components/accordion.css";
+
 @import "partials/content/main.css";
 @import "partials/cards/card.css";
-
-.wysiwyg-text {
-  max-width: var(--breakpoint-md-rem);
-  margin-inline: auto;
-  margin-block-end: 4rem;
-
-  & > * {
-    max-width: 54ch;
-    margin-inline-end: auto;
-  }
-
-  & ul,
-  & ol,
-  & dl {
-    margin-block: 1.25rem;
-  }
-
-  & p {
-    margin-block-end: 1.25rem;
-  }
-}
 
 .controls {
   max-width: var(--breakpoint-md-rem);
@@ -72,6 +53,7 @@
 
   & #remInfo {
     grid-area: text;
+    font-size: 1rem;
   }
 }
 
@@ -164,4 +146,12 @@
       content: "Above mobile media query";
     }
   }
+}
+
+.main-header {
+  width: 100%;
+  max-width: var(--breakpoint-md-rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+  margin-block-start: 2rem;
 }

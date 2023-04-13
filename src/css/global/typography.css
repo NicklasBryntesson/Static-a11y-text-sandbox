@@ -1,0 +1,44 @@
+.wysiwyg-text {
+  max-width: var(--breakpoint-md-rem);
+  margin-inline: auto;
+  margin-block-end: 4rem;
+
+  & > * {
+    max-width: 54ch;
+    margin-inline-end: auto;
+  }
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-block-end: 0.5em;
+  }
+
+  & ul,
+  & ol,
+  & dl {
+    margin-block: 1.25rem;
+  }
+
+  & p {
+    margin-block-end: 1.25rem;
+  }
+
+  & a {
+    color: var(--brand-hot-pink);
+    text-decoration: underline;
+    text-decoration-color: var(--brand-hot-pink);
+    text-underline-offset: 0.125em;
+    text-decoration-thickness: 0.125em;
+  }
+
+  & blockquote {
+    margin-block: 1.5rem;
+    padding-inline-start: 1.25rem;
+    font-size: large;
+    border-inline-start: 0.25em solid var(--brand-sunset);
+  }
+}

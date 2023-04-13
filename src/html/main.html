@@ -1,6 +1,8 @@
   
 <main class="site-main">
 
+    {{> Information/info-sandbox }}
+
     <section class="controls">
 
         {{> components/values }}
@@ -15,10 +17,12 @@
 
         <span id="displayViewPort"></span>
 
-        {{> cards/card-px }}
+        {{> cards/card }}
 
-        {{> wysiwyg/text-px }}
+        {{> wysiwyg/text }}
         
+        {{> components/accordion }}
+
     </div>
     
 </main>

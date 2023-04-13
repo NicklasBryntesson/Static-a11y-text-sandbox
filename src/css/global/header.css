@@ -1,5 +1,6 @@
 .site-header {
   background-color: var(--brand-pasoa);
+  background-image: url("./images/header-noise.svg");
   color: var(--brand-color-black);
 
   & .inline-center {
@@ -18,13 +19,48 @@
   }
 }
 
-[data-measure="rem"] {
-  .site-header {
-    padding-inline: var(--outer-margin-rem);
-    background-image: url("./images/header-noise.svg");
+/*
+*
+* Mobile view
+*
+*/
 
-    & .inline-center {
-      padding-block: var(--utillity-gap-s-rem);
+@media (min-width: 0) and (max-width: 29.98rem) {
+  [data-measure="vertical-px-horizontal-px"] {
+    .site-header {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-sm-px);
+    }
+  }
+
+  [data-measure="vertical-px-horizontal-rem"] {
+    .site-header {
+      padding-inline: var(--outer-margin-px);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+
+  [data-measure="vertical-rem-horizontal-rem"] {
+    .site-header {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
+    }
+  }
+}
+
+/*
+*
+* Desktop view
+*
+*/
+
+@media (min-width: 30rem) {
+  [data-measure="vertical-px-horizontal-px"],
+  [data-measure="vertical-px-horizontal-rem"],
+  [data-measure="vertical-rem-horizontal-rem"] {
+    .site-header {
+      padding-inline: var(--outer-margin-rem);
+      padding-block: var(--utillity-gap-sm-rem);
     }
   }
 }

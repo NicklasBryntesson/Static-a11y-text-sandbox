@@ -1,0 +1,26 @@
+.accordion {
+  width: 100%;
+  max-width: var(--breakpoint-md-rem);
+  margin-inline: auto;
+  background-color: var(--brand-sand-50);
+  padding: 0.25em;
+
+  & h3 {
+  }
+
+  & .toggle {
+    display: flex;
+    padding-inline-start: 1em;
+    padding-block: 0.5em;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--brand-sunset);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  & .cartridge {
+    padding-inline: 1.25em;
+  }
+}
