@@ -38,3 +38,19 @@ if (responsiveValuesSwitch) {
     localStorage.setItem('measure', newMeasure);
   });
 }
+
+// Listen for changes to the content panel toggle button:
+const contentPanelButton = document.querySelector('#tabControl');
+
+if (contentPanelButton) {
+    const contentControls = document.querySelector('.content-controls');
+
+    contentPanelButton.addEventListener('click', () => {
+
+        const isExpanded = contentPanelButton.getAttribute('aria-expanded') === 'true';
+        // switch the text inside the button between stäng and Inställningar:
+        contentPanelButton.innerText = isExpanded ? 'Inställningar' : 'Stäng';
+        contentPanelButton.setAttribute('aria-expanded', !isExpanded);
+        contentControls.classList.toggle('expanded', !isExpanded);
+    });
+}

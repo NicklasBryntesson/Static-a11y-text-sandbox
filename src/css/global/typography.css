@@ -1,7 +1,7 @@
 .wysiwyg-text {
   max-width: var(--breakpoint-md-rem);
   margin-inline: auto;
-  margin-block-end: 4rem;
+  margin-block-end: 2rem;
 
   & > * {
     max-width: 54ch;
